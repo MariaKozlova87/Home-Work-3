@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dz.form</title>
+  <link rel="stylesheet"href="/dz.form.scss">
+  <style>
+    .form {
+    background: #fff;
+    border : 15px solid #ccc;
+    border-radius: 30px;
+    padding: 50px 100px;
+    cursor :pointer;
+  }
+  .form:hover {background :#ccc;}
+  #window{width :500px;height: 400px;
+  margin :20px auto; background: #fff;}
+  .close{margin : 10px 0 0 520px; cursor : pointer; border: 1px solid #ccc;
+  padding: 2px; background: #ccc;}
+  .close:hover {background : #fff;};
+
+  .label{
+margin-left: 2px;
+cursor: pointer; border: 1px;
+}
+  </style>
+</head>
+<body>
+  <form action="dz.form.html" name="f1"></form>
+  <div id = "window">
+    <img class="close" src="close.png" alt=" ">
+    <div class = "form">
+      <h1>Some Form</h1>
+    <form method="post" action="handler.js">
+   <input type="text" placeholder="type something" name class="input">
+   <input type="submit" value="add" class="input">
+   <!-- <input type="field" value= -->
+</form>
+    </div>
+    <p>Fruits</p>
+    <ul>
+      <li>bananas</li>
+      <li>pears</li>
+      <li>pineapples</li>
+    </ul>
+    <p>Berries</p>
+    <ul>
+    <li>cranberries</li>
+    <li>blueberries</li>
+    <li>raspberries</li>
+    </ul>
+    <p>Vegetables</p>
+    <ul>
+      <div id="container">
+      <div class="pane">
+      <li>broccoli</li>
+      <label class="remove-label">x</label>
+    </div>
+  </div>
+      <li>cucumber</li>
+      <li>tomatoes</li>
+    </ul>
+  <script src="./dz.js"></script>
+</body>
+</html> 
